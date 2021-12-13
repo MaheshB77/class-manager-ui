@@ -1,27 +1,25 @@
-# ClassManagerUi
+# Prerequisites for running `class-manager-ui` on local
+1. Node
+2. NPM
+3. Angular cli
+4. Docker (optional)
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.29.
+# How to run `class-manager-ui` on local machine
+* Clone the repository on local machine
+* Install the node dependencies using below command
+    * `npm install`
+* Run the project using below command
+    * `ng serve`
+* After executing the `ng serve` command you can go to any browser and type below url
+    * http://localhost:4500/
 
-## Development server
-
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+# How to run `class-manager-ui` on local using docker
+* For this you need to have docker in your local machine
+* Clone the repository on local machine
+* Navigate into `class-manager-ui` folder
+* Build the docker image using below command
+    * `sudo docker build . -t class-manager`
+* Run the docker image using below comnmand
+    * `sudo docker run -p 80:80 class-manager`
+* Go to any browser and type the below url
+    * http:localhost:80/
